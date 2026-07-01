@@ -1,0 +1,71 @@
+<div class="bg-gray-950 text-gray-200 min-h-screen flex items-center justify-center py-12 px-4">
+  <div class="w-full max-w-xl bg-gradient-to-b from-gray-900 to-gray-900/40 p-8 sm:p-10 rounded-3xl border border-gray-800/80 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.5)] animate-[fadeIn_0.5s_ease-out] space-y-8">
+    
+    <!-- Header Stack -->
+    <div class="border-b border-gray-800/80 pb-6">
+      <span class="text-xs font-bold text-amber-500 tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20">
+        Secure Gateway
+      </span>
+      <h1 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 tracking-tight mt-3">
+        Checkout
+      </h1>
+      <p class="text-xs text-gray-500 mt-1">Provide your deployment logistics parameters below.</p>
+    </div>
+
+    <!-- Interactive Form Matrix -->
+    <div class="space-y-5">
+      
+      <!-- Customer Name Input -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-gray-400 font-bold uppercase tracking-widest pl-1">Full Name</label>
+        <input
+          [(ngModel)]="customerName"
+          type="text"
+          placeholder="e.g., Ahmed Raza"
+          class="w-full bg-gray-950 border border-gray-800 focus:border-amber-500/60 rounded-xl p-4 text-sm text-gray-200 placeholder-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-500/60 transition-all duration-300 shadow-inner">
+      </div>
+
+      <!-- Phone Number Input -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-gray-400 font-bold uppercase tracking-widest pl-1">Contact Terminal (Phone)</label>
+        <input
+          [(ngModel)]="phone"
+          type="tel"
+          placeholder="e.g., 03001234567"
+          class="w-full bg-gray-950 border border-gray-800 focus:border-amber-500/60 rounded-xl p-4 text-sm text-gray-200 placeholder-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-500/60 transition-all duration-300 shadow-inner">
+      </div>
+
+      <!-- Delivery Address Textarea -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-gray-400 font-bold uppercase tracking-widest pl-1">Dropoff Destination Address</label>
+        <textarea
+          [(ngModel)]="address"
+          rows="3"
+          placeholder="Provide complete residential or corporate physical coordinates..."
+          class="w-full bg-gray-950 border border-gray-800 focus:border-amber-500/60 rounded-xl p-4 text-sm text-gray-200 placeholder-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-500/60 transition-all duration-300 resize-none shadow-inner">
+        </textarea>
+      </div>
+
+      <!-- Price Layout Node -->
+      <div class="bg-gray-950/60 border border-gray-800/60 rounded-2xl p-5 flex items-center justify-between mt-8 shadow-inner">
+        <div>
+          <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Aggregate Manifest Total</p>
+          <span class="text-xs text-gray-400 font-medium">All taxes & packaging inclusive</span>
+        </div>
+        <div class="text-2xl font-black text-amber-500 font-mono tracking-tight">
+          Rs. {{ cartService.total() }}
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div class="pt-4">
+        <button
+          (click)="placeOrder()"
+          class="relative w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-gray-950 font-black text-base py-4 rounded-2xl active:scale-98 transition-all shadow-[0_0_30px_rgba(245,158,11,0.15)] text-center tracking-widest uppercase">
+          Authorize & Place Order
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

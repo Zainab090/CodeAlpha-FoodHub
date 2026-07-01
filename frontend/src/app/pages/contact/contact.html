@@ -1,0 +1,104 @@
+<div class="bg-gray-950 text-gray-200 min-h-screen py-16 flex items-center justify-center">
+  <div class="container mx-auto px-6 max-w-5xl grid md:grid-cols-12 gap-12 items-start animate-[fadeIn_0.5s_ease-out]">
+    
+    <!-- Left Column: Branding Details & Operational Metadata Matrix (5 Cols) -->
+    <div class="md:col-span-5 space-y-8">
+      <div class="space-y-4">
+        <span class="text-xs font-bold text-amber-500 tracking-widest uppercase bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20">
+          Communications Node
+        </span>
+        <h1 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 tracking-tight leading-none">
+          Contact Us
+        </h1>
+        <p class="text-gray-400 text-sm md:text-base font-light leading-relaxed">
+          Have an operational inquiry, corporate reservation structure, or raw feedback string? Transmit your data profile directly to our guest relations desk.
+        </p>
+      </div>
+
+      <!-- Information Micro-Card Array -->
+      <div class="space-y-4 pt-4 border-t border-gray-900">
+        <h2 class="text-xs font-bold text-gray-500 uppercase tracking-widest">
+          Restaurant Metadata Coordinates
+        </h2>
+        
+        <!-- Location Coord -->
+        <div class="flex items-center gap-4 bg-gray-900/30 border border-gray-900 p-4 rounded-xl backdrop-blur-sm group hover:border-gray-800 transition-colors">
+          <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center border border-amber-500/20 text-lg">
+            📍
+          </div>
+          <div>
+            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Physical Hub</p>
+            <p class="text-sm font-semibold text-white">Karachi, Pakistan</p>
+          </div>
+        </div>
+
+        <!-- Phone Coord -->
+        <div class="flex items-center gap-4 bg-gray-900/30 border border-gray-900 p-4 rounded-xl backdrop-blur-sm group hover:border-gray-800 transition-colors">
+          <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center border border-amber-500/20 text-lg">
+            📞
+          </div>
+          <div>
+            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Hotline Terminal</p>
+            <p class="text-sm font-mono font-bold text-white tracking-wide">+92 300 1234567</p>
+          </div>
+        </div>
+
+        <!-- Email Coord -->
+        <div class="flex items-center gap-4 bg-gray-900/30 border border-gray-900 p-4 rounded-xl backdrop-blur-sm group hover:border-gray-800 transition-colors">
+          <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center border border-amber-500/20 text-lg">
+            ✉️
+          </div>
+          <div>
+            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Digital Inbox</p>
+            <p class="text-sm font-mono text-white">contact@foodhub.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Premium Interactive Secure Form Module (7 Cols) -->
+    <div class="md:col-span-7 w-full bg-gradient-to-b from-gray-900 to-gray-900/40 p-8 sm:p-10 rounded-3xl border border-gray-800/80 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.5)] space-y-6">
+      
+      <!-- Guest Name Input -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-gray-400 font-bold uppercase tracking-widest pl-1">Your Name</label>
+        <input
+          [(ngModel)]="name"
+          type="text"
+          placeholder="e.g., Ahmed Raza"
+          class="w-full bg-gray-950 border border-gray-800 focus:border-amber-500/60 rounded-xl p-4 text-sm text-gray-200 placeholder-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-500/60 transition-all duration-300 shadow-inner">
+      </div>
+
+      <!-- Email Input -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-gray-400 font-bold uppercase tracking-widest pl-1">Email Address</label>
+        <input
+          [(ngModel)]="email"
+          type="email"
+          placeholder="e.g., guest@domain.com"
+          class="w-full bg-gray-950 border border-gray-800 focus:border-amber-500/60 rounded-xl p-4 text-sm text-gray-200 placeholder-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-500/60 transition-all duration-300 shadow-inner">
+      </div>
+
+      <!-- Message Textarea -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-gray-400 font-bold uppercase tracking-widest pl-1">Message Body</label>
+        <textarea
+          [(ngModel)]="message"
+          rows="5"
+          placeholder="Construct your transmission payload here..."
+          class="w-full bg-gray-950 border border-gray-800 focus:border-amber-500/60 rounded-xl p-4 text-sm text-gray-200 placeholder-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-500/60 transition-all duration-300 resize-none shadow-inner">
+        </textarea>
+      </div>
+
+      <!-- Submit Operation Anchor -->
+      <div class="pt-2">
+        <button
+          (click)="sendMessage()"
+          class="relative w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-gray-950 font-black text-base py-4 rounded-2xl active:scale-98 transition-all shadow-[0_0_30px_rgba(245,158,11,0.15)] text-center tracking-widest uppercase">
+          Transmit Message Packet
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
