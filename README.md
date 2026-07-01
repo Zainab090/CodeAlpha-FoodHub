@@ -9,7 +9,7 @@ FoodHub provides a seamless online food ordering experience with a modern Angula
 ## 📹 Project Demo
 
 Watch the project demonstration on LinkedIn:
-*(Add your LinkedIn post link after publishing)*
+https://www.linkedin.com/feed/update/urn:li:ugcPost:7478063396307914752
 
 ---
 
@@ -54,7 +54,7 @@ Watch the project demonstration on LinkedIn:
 ## 📂 Project Structure
 
 ```
-CodeAlpha_FoodHub/
+MY-RESTAURANT/
 │
 ├── frontend/          # Angular Application
 │
@@ -74,7 +74,7 @@ CodeAlpha_FoodHub/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YourUsername/CodeAlpha_FoodHub.git
+git clone https://github.com/Zainab090/CodeAlpha_FoodHub.git
 ```
 
 ### 2. Navigate to the Project
@@ -178,13 +178,11 @@ Through this project, I gained hands-on experience in:
 Full Stack Development Intern @ CodeAlpha
 
 LinkedIn:
-https://www.linkedin.com/in/your-profile
+https://www.linkedin.com/feed/update/urn:li:ugcPost:7478063396307914752
 
 GitHub:
-https://github.com/YourUsername
+https://github.com/Zainab090
 
-Portfolio:
-https://www.codealpha.tech
 
 ---
 
